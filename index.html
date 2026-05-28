@@ -803,31 +803,20 @@ function saveLoginLog(user){
 
 const SEED = [
   {num:'PUT 260201',serial:'0201/25-26',month:'February',year:'2026',type:'Machine + Panel Supplied',desc:'Pri Unwind Turret',machine:'ECL Machine',config:'PLC: S7-1200 CPU 1214C DC/DC/DC\nG120: PM240_2 + CU250S_2Pn\nHMI: Weintek 7"',wiring:'Adlin Vinith, Gobinda',tested:'',commission:'',customer:'Om Sai Plastics',remarks:''},
-  {num:'SUT 260202',serial:'0202/25-26',month:'February',year:'2026',type:'Machine + Panel Supplied',desc:'Sec Unwind Turret',machine:'ECL Machine',config:'PLC: S7-1200 CPU 1214C DC/DC/DC\nG120: PM240_2 + CU250S_2Pn\nHMI: Weintek 7"',wiring:'Adlin Vinith, Gobinda',tested:'',commission:'',customer:'Om Sai Plastics',remarks:''},
-  {num:'RT 260203',serial:'0203/25-26',month:'February',year:'2026',type:'Machine + Panel Supplied',desc:'Rewind Turret',machine:'ECL Machine',config:'PLC: S7-1200 CPU 1214C DC/DC/DC\nG120: PM240_2 + CU250S_2Pn\nHMI: Weintek 7"',wiring:'Adlin Vinith, Gobinda',tested:'',commission:'',customer:'—',remarks:''},
-  {num:'SMR260201',serial:'0204/25-26',month:'February',year:'2026',type:'In Site Retro-Fit',desc:'Dosing Unit',machine:'LR Dosing Retrofitted',config:'PLC: S7-1200 CPU 1214C DC/DC/DC\nADD MOD: RS485 + 4AI RTD\nV20: 0.55Kw/3Ph\nHMI: Weintek 7"',wiring:'Biju Panda, Ravisankar, Shreyass',tested:'',commission:'',customer:'—',remarks:''},
-  {num:'ARC260201',serial:'0205/25-26',month:'February',year:'2026',type:'Electrical Base Plate Supplied',desc:'9 Colour ARC Plate without MPA',machine:'9 Colour ARC Plate without MPA',config:'PLC: S7-1200 CPU 1214C DC/DC/DC\nADD MOD: 16DO + 8DO',wiring:'Yogeshwaran G',tested:'Arun Prasad, Adlin Vinith',commission:'',customer:'Rotoflex Industries',remarks:''},
-  {num:'SMR260202',serial:'0206/25-26',month:'February',year:'2026',type:'In Site Retro-Fit',desc:'Dosing Unit',machine:'Twin Dosing Retrofitted',config:'PLC: S7-1200 CPU 1214C DC/DC/DC\nADD MOD: RS485 + 4AI RTD\nV20: 0.37Kw/3Ph\nHMI: Weintek 7"',wiring:'Adlin Vinith, Gobinda, Madhanraj',tested:'Adlin Vinith, Sankar',commission:'',customer:'Holopack Industries',remarks:''},
-  {num:'SB260301',serial:'0301/25-26',month:'March',year:'2026',type:'On Site Retro-Fit',desc:'Schiavi Combi to SB Retrofit',machine:'Schiavi Combi to Solvent Base',config:'PLC: CPU 1215C, CM1243-5+ET200M IM153-1\nPM240-2_CU250S + Existing IM Modules\nHMI: 10" Weintek',wiring:'Arun Prasad, Biju Panda',tested:'Adlin Vinith, Biju Panda',commission:'',customer:'Crownpack Nigeria',remarks:''},
-  {num:'WI260302',serial:'0302/25-26',month:'March',year:'2026',type:'On Site Retro-Fit',desc:'Kalpvrux Web Inspection Machine Retrofit',machine:'Web Inspection Machine',config:'PLC: CPU 1214, PM240-2+CU250S & CU240E\nHMI: 7" Weintek',wiring:'Adlin Vinith, Sankar',tested:'Adlin Vinith, Sankar',commission:'',customer:'Shrinath Rotopack',remarks:''},
-  {num:'ARC260301',serial:'0303/25-26',month:'March',year:'2026',type:'Electrical Base Plate Supplied',desc:'8 Colour ARC Plate without MPA',machine:'8 Colour ARC Plate without MPA',config:'Without PLC',wiring:'Adlin Vinith',tested:'',commission:'',customer:'JF Packaging',remarks:''},
-  {num:'PR260301',serial:'0305/25-26',month:'March',year:'2026',type:'Panel Supplied',desc:'Raulimax MLS Printing Machine',machine:'7D MLS Printing Machine',config:'PLC: S7-1500 CPU 1510\nADD MOD: Innovance\nHMI: Weintek 7"',wiring:'Biju Panda, Ravisankar',tested:'Arun Prasad',commission:'',customer:'—',remarks:'Wiring person not allocated'},
-  {num:'PR260302',serial:'0307/25-26',month:'March',year:'2026',type:'Panel Supplied',desc:'MLS Machine',machine:'4 Drive Unwind with Powder Brake',config:'PLC: S7-1200 CPU 1212C\nG120-PM240-2+CU240E\nHMI: 7" Weintek',wiring:'Gobinda',tested:'Sankar',commission:'Adlin Vinith, Biwas',customer:'Canara Flex',remarks:''},
-  {num:'PR260501',serial:'0501/26-27',month:'May',year:'2026',type:'Panel Supplied',desc:'5D MLS Printing Machine',machine:'5D MLS Printing Machine',config:'PLC: S7-1200 CPU 1212C\nDrives: G120-PM240-2+CU240E\nHMI: 7" Weintek Easy Access (2 Nos)',wiring:'Madhanraj, Yogeshwaran G',tested:'',commission:'',customer:'A.V.M.S. Bags Pvt Ltd',remarks:'Panel Yet Not Tested'},
-  {num:'SPL260501',serial:'0502/26-27',month:'May',year:'2026',type:'Panel Supplied',desc:'Splice Detection System',machine:'Splice Detection System',config:'PLC: S7-1200 CPU 1211C DC/DC/DC\nHMI: 7" Weintek Easy Access',wiring:'Adlin Vinith',tested:'',commission:'',customer:'Srinath Rotopack',remarks:''},
 ];
 
 // ===== DB =====
 /* ===== JSONBIN CONFIG ===== */
-const JBIN_ID  = '6a180b3721f9ee59d294a3c2';
-const JBIN_KEY = '$2a$10$6a180b6addf5aa59f76f441f';
-const JBIN_URL = `https://api.jsonbin.io/v3/b/${JBIN_ID}`;
+const JBIN_ID         = '6a180b3721f9ee59d294a3c2';
+const JBIN_MASTER_KEY = '$2a$10$ROG/wX1nDc1S6LCSXbLpDu76/BOhTQVJhjMNkwI36la.EmD6LP7m.';
+const JBIN_ACCESS_KEY = '$2a$10$47h2Cd/vckB5ShavwBUIyevbSDWyMiZlqqAy8T3DzZGh1pZz7OB7G';
+const JBIN_URL        = `https://api.jsonbin.io/v3/b/${JBIN_ID}`;
 
-/* Load from JSONBin — async, refreshes UI when done */
+/* Load from JSONBin — uses read-only X-Access-Key */
 async function loadDBFromCloud(){
   try{
     const res = await fetch(JBIN_URL+'/latest', {
-      headers:{ 'X-Master-Key': JBIN_KEY }
+      headers:{ 'X-Access-Key': JBIN_ACCESS_KEY }
     });
     const json = await res.json();
     const data = json.record?.projects || [];
@@ -845,7 +834,7 @@ async function loadDBFromCloud(){
   }
 }
 
-/* Save to JSONBin — async, also caches locally */
+/* Save to JSONBin — uses X-Master-Key for write access */
 async function saveDB(data){
   localStorage.setItem('rapl_db', JSON.stringify(data));
   try{
@@ -853,7 +842,7 @@ async function saveDB(data){
       method : 'PUT',
       headers: {
         'Content-Type' : 'application/json',
-        'X-Master-Key' : JBIN_KEY
+        'X-Master-Key' : JBIN_MASTER_KEY
       },
       body: JSON.stringify({ projects: data })
     });
